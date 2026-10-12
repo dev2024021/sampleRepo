@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>특허 원문</title>
+    <link rel="stylesheet" href="/css/original.css">
+</head>
+<body>
+<article>
+    <p class="label">SAMPLE PATENT DOCUMENT</p>
+    <h1 id="documentTitle">특허 원문</h1>
+    <dl>
+        <dt>발명의 명칭</dt>
+        <dd>웹 기반 원문 조회 시스템 및 그 방법</dd>
+        <dt>요약</dt>
+        <dd>이 문서는 원문보기 기능의 실행을 검증하기 위한 샘플입니다.</dd>
+    </dl>
+</article>
+<script>
+    const patentId = new URLSearchParams(window.location.search).get("patentId");
+    document.getElementById("documentTitle").textContent = patentId
+        ? `특허 ${patentId} 원문`
+        : "특허 원문";
+</script>
+</body>
+</html>

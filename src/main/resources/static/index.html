@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>특허 원문 보기 샘플</title>
+    <link rel="stylesheet" href="/css/patent.css">
+</head>
+<body>
+<main class="patent-viewer">
+    <h1>특허 원문 보기</h1>
+    <p>특허 번호를 입력하고 원문보기 버튼을 누르세요.</p>
+
+    <form id="originalForm">
+        <label for="patentId">특허 번호</label>
+        <div class="controls">
+            <input id="patentId" name="patentId" value="TEST-001"
+                   pattern="[A-Za-z0-9-]{1,50}" required>
+            <button id="showOriginal" type="submit">원문보기</button>
+        </div>
+    </form>
+
+    <p id="originalStatus" role="status" aria-live="polite"></p>
+    <iframe id="originalFrame" title="특허 원문"></iframe>
+</main>
+<script src="/js/patent.js"></script>
+</body>
+</html>

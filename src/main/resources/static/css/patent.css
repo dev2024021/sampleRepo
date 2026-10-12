@@ -1,0 +1,46 @@
+:root {
+    color: #172033;
+    font-family: system-ui, sans-serif;
+    background: #f4f6fa;
+}
+
+body {
+    margin: 0;
+}
+
+.patent-viewer {
+    width: min(960px, calc(100% - 32px));
+    margin: 40px auto;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+input, button {
+    border: 1px solid #9ca6b8;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font: inherit;
+}
+
+button {
+    border-color: #2456d6;
+    color: white;
+    background: #2456d6;
+    cursor: pointer;
+}
+
+#originalStatus {
+    min-height: 24px;
+}
+
+#originalFrame {
+    width: 100%;
+    height: 520px;
+    border: 1px solid #ccd2dc;
+    border-radius: 8px;
+    background: white;
+}
